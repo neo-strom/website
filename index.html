@@ -35,6 +35,7 @@
 
      :root {
        --brand: #008B8B;
+       --offbrand: 0, 139, 139;
      }
 
      * {
@@ -211,6 +212,11 @@
        .badge-text {
 	 font-size: 24px;
        }
+     }
+
+     ::selection {
+       background: rgba(var(--offbrand), 1.0);
+       color: white;
      }
     </style>
   </head>
